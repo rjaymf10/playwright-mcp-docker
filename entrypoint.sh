@@ -34,6 +34,8 @@ fi
 
 MCP_ARGS="$MCP_ARGS --allowed-hosts *"
 
+MCP_ARGS="$MCP_ARGS --host 0.0.0.0"
+
 echo "Starting @playwright/mcp with args: $MCP_ARGS $@"
 echo "Internal MCP port (if using SSE): $INTERNAL_PORT"
 echo -n "@playwright/mcp " && npx -y @playwright/mcp --version

@@ -32,7 +32,7 @@ if [ -n "$VIEWPORT_SIZE" ]; then
   MCP_ARGS="$MCP_ARGS --viewport-size $VIEWPORT_SIZE"
 fi
 
-MCP_ARGS="$MCP_ARGS --allowed-hosts *"
+MCP_ARGS="$MCP_ARGS --allowed-hosts 192.168.68.61,localhost,127.0.0.1"
 
 MCP_ARGS="$MCP_ARGS --host 0.0.0.0"
 

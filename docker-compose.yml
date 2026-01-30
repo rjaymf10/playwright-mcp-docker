@@ -17,7 +17,7 @@ services:
       - XDG_RUNTIME_DIR=${XDG_RUNTIME_DIR:-/run/user/1000} # Default for non-root user
     ports:
       # Map host port (from .env) to the same internal port
-      - "${MCP_HOST_PORT:-8931}:${MCP_HOST_PORT:-8931}"
+      - "8931:8931"
     volumes:
       # --- Volume mounts for headed mode (WSL2 + WSLg) ---
       # Read host paths from .env file (with defaults)

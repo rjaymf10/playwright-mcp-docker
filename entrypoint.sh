@@ -32,7 +32,7 @@ if [ -n "$VIEWPORT_SIZE" ]; then
   MCP_ARGS="$MCP_ARGS --viewport-size $VIEWPORT_SIZE"
 fi
 
-MCP_ARGS="$MCP_ARGS --allowed-hosts automation.makerspaceinnovhub.com"
+MCP_ARGS="$MCP_ARGS --allowed-hosts 104.21.90.63"
 
 MCP_ARGS="$MCP_ARGS --host 0.0.0.0"
 

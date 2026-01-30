@@ -4,7 +4,7 @@ services:
     container_name: playwright-mcp-server
     tty: true
     env_file:
-      - .env
+      - stack.env
     environment:
       # Default is headed mode (SSE connection) unless overridden by .env
       - HEADLESS=${HEADLESS:-false}

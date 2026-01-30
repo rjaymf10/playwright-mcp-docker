@@ -32,6 +32,8 @@ if [ -n "$VIEWPORT_SIZE" ]; then
   MCP_ARGS="$MCP_ARGS --viewport-size $VIEWPORT_SIZE"
 fi
 
+MCP_ARGS="$MCP_ARGS --allowed-host *"
+
 echo "Starting @playwright/mcp with args: $MCP_ARGS $@"
 echo "Internal MCP port (if using SSE): $INTERNAL_PORT"
 echo -n "@playwright/mcp " && npx -y @playwright/mcp --version
